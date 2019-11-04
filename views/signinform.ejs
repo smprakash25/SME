@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=signup] {
+  width: 100px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align:center;
+}
+
+input[type=signup]:hover {
+  background-color: blue;
+}
+div{
+  border-radius: 5px;
+  background-color:gray;
+  padding: 20px;
+  width:300px;
+}
+</style>
+<body>
+<center>
+<h1>Create a new account</h1>
+<div>
+  <form action="/api/users" method="POST">
+    <input type="text" id="fname" name="name" placeholder="Name">
+    <input type="text" id="email" name="email" placeholder="Email address">
+    <input type="text" id="mobile" name="mobile" placeholder="mobile number">
+	  <input type="text" id="Aadhar" name="adhar" placeholder="Aadhar number">
+		<input type="password" id="password" name="password" placeholder="Password">
+     <button type="submit" class="registerbtn">Register</button>
+      
+  </form>
+</div>
+</center>
+</body>
+</html>

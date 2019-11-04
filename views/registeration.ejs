@@ -1,0 +1,49 @@
+<%include ./partials/header %>
+    <title>Form</title>
+        <style>
+         form{
+             width:50%;
+             margin:2% 30%;
+         }
+    </style>
+</head>
+<div>
+<body>
+            <h3 style="text-align:center;">Enter  Inforamation</h3>
+            <form action="/api/users" method="POST"></form>
+        <formfield>
+       <label for="name">Name : </label> 
+        <input type="text" name="name"> <br><br>
+        <label for="name">Email : </label>  
+        <input type="email" placeholder="Enter Your Email" name="email"> <br><br>
+        <label for="name">Branch : </label> <select>
+                    <option value="ce">CE</option>
+                    <option value="cse">CSE</option>
+                    <option value="ece">ECE</option>
+                    <option value="eee">EEE</option>
+                    <option value="me">ME</option>
+                    <option value="mme">MME</option>
+                    <option value="mme">PIE</option>
+                </select> <br><br>
+           <label for="name">Gender : </label>
+                    <input type="radio" name="gender">Male
+                     <input type="radio" name="gender">Female <br><br>
+        
+                     <label for="name">Languages : </label> 
+                     <input type="checkbox" value="lang1">C
+                    <input type="checkbox" value="lang2">C++
+                    <input type="checkbox" value="lang3">Java
+                    <input type="checkbox" value="lang4">Python
+                    <input type="checkbox" value="lang5">JavaScript
+                    <br>
+                    <br>
+                    <label for="name" >About Yourself : </label> 
+                    <textarea rows=5 cols=30 style="vertical-align: top;"> </textarea>
+                    </formfield>
+          <button type="submit" class="registerbtn">Register</button>
+       
+    </formfield>
+    </form>
+</body>
+</div>
+</html>
